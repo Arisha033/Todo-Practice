@@ -91,3 +91,33 @@
     transform: translateY(8rem) rotateZ(28deg);
     opacity: 0;
  }
+ /* classname select */
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+/* select tag */
+select{
+  color: #fda085;
+  width: 10rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: white;
+}
+.select::after{
+  content: "\25BC";
+  position: absolute;
+  background: #fda085;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.select:hover::after{
+  color: #fda085;
+  background: white;
+}
